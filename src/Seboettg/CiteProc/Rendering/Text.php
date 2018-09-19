@@ -103,7 +103,7 @@ class Text implements Rendering
                     $renderedText = $this->renderVariable($data, $lang);
                 }
                 if (CiteProc::getContext()->getRenderingState()->getValue() === RenderingState::SUBSTITUTION) {
-                    unset($data->{$this->toRenderTypeValue});
+                    //unset($data->{$this->toRenderTypeValue});
                 }
                 $renderedText = $this->applyAdditionalMarkupFunction($data, $renderedText);
                 break;
